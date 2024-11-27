@@ -213,13 +213,13 @@ if ( ! class_exists( 'WooCommerce_Wallee' ) ) {
 					'register_order_statuses',
 				)
 			);
-			add_action(
+			/*add_action(
 				'init',
 				array(
 					$this,
 					'set_device_id_cookie',
 				)
-			);
+			);*/
 			add_action(
 				'wp_enqueue_scripts',
 				array(
