@@ -258,7 +258,7 @@ class WC_Wallee_Helper {
 					$line_item->setSku( 'adjustment' );
 					$line_item->setUniqueId( 'adjustment' );
 					$line_item->setShippingRequired( false );
-					$line_item->setType( $enforce_consistency > 0 ? \Wallee\Sdk\Model\LineItemType::FEE : \Wallee\Sdk\Model\LineItemType::DISCOUNT );
+					$line_item->setType( $inconsistent_amount > 0 ? \Wallee\Sdk\Model\LineItemType::FEE : \Wallee\Sdk\Model\LineItemType::DISCOUNT );
 					$line_items[] = $line_item;
 					break;
 				default:
